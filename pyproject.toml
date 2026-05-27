@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pii-guardrail"
+version = "0.1.0"
+description = "Validate prompts for no PII using Microsoft Presidio"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "presidio-analyzer>=2.2.0",
+    "spacy>=3.7.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["pii_guardrail*"]
