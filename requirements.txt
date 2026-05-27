@@ -1,0 +1,3 @@
+# PII Guardrail - Presidio-based validation
+presidio-analyzer>=2.2.0
+spacy>=3.7.0
